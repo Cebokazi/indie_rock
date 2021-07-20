@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*background-image: url("");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: -webkit-linear-gradient(right, #f5b561 30%, #0b0335 70%);/*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner-img.jpg") center/cover no-repeat*/;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  nav.sticky{
+    background: transparent;
+    padding: 13px 0;
+  }
+  nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  .navbar .menu a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    
+}
+.card-text{
+    color: black;
+}
+
+.card-content{
+    background: transparent;
+    width: 600px;
+    height: 400px; 
+    -webkit-box-shadow: 0 0 20px rgba(22, 22, 22, 0.959);
+    box-shadow: 0 0 20px rgba(22, 22, 22, 0.959);
+}
+
+img {
+    margin-top: 70px;
+    margin-left: 60px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.959);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.959); 
+}
+
+h3 {
+  color: rgb(231, 162, 101);
+  font-family: Acme;
+  
+  margin-top: 20px;
+}
+
+p {
+  color: rgb(231, 162, 101);
+  font-size: smaller;
+  font-family: Acme;
+  
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
